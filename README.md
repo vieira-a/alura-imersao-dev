@@ -18,3 +18,11 @@ Os participantes foram desafiados a dar continuidade a uma a aplicação desenvo
 - Exibir a média ao usuário.
 
 [Projeto base](https://codepen.io/imersao-dev/pen/QWgppMM)
+
+**#2 Conversor de moedas**
+
+Este segundo projeto da imersão tem o propósito de continuar o aprofundamento em HTML, CSS e Javascript, por meio de um conversor de moedas, que converte um valor de Real (BRL)para Dólar (USD).
+
+Além do projeto base, foram propostos mais 3 desafios:
+
+- Realizar conversão também para Bitcoin (BTC)
