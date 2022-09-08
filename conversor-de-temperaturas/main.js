@@ -21,7 +21,7 @@
  *  [x] °C => °F 
  *  [x] °C => °K
  *  [x] °F => °C
- *  [ ] °F => °K
+ *  [x] °F => °K
  *  [ ] °K => °C
  *  [ ] °K => °F
  * [ ] Create function to write the converted temperatures on the result inputs
@@ -109,6 +109,8 @@ function getBaseTemperature(){
 
         selectTemperature = 'kelvin';
 
+        kelvinToCelcius()
+
     })){
 
     }
@@ -167,6 +169,17 @@ function fahrenheitToKelvin() {
 
 }
 
+/** °K => °C - 273,15 = °C
+ */
+function kelvinToCelcius() {
+
+    elResultKelvin.value = `${temperatureToConvert} °K`;
+
+    tempResult = (temperatureToConvert - 273.15).toFixed(2);
+
+    elResultCelcius.value = `${tempResult} °C`
+
+}
 
 
 getValueToConvert()
