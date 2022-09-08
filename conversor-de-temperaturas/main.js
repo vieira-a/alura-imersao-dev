@@ -1,32 +1,6 @@
 /**
  * Temperature converter program
  * 
- * Formula
- * 
- * °C => °F - (°C × 9/5) + 32 = °F
- * °C => °K - C + 273,15 = K
- * °F => °C - (°F − 32) × 5/9 = °C
- * °F => °K - (°F − 32) × 5/9 + 273,15 = K
- * °K => °C - 273,15 = °C
- * °K => °F - (K − 273,15) × 9/5 + 32 = °F
- */
-
-/**
- * TODO list
- * 
- * [x] Get variables initialization
- * [x] Create function to get convert value
- * [x] Create function to get radio selection
- * [x] Create function to calculate conversions
- *  [x] °C => °F 
- *  [x] °C => °K
- *  [x] °F => °C
- *  [x] °F => °K
- *  [x] °K => °C
- *  [x] °K => °F
- * [x] Create function to write the converted temperatures on the result inputs
- */
-
 /**
  * Variables initialization
  */
@@ -68,8 +42,6 @@ const elResultCelcius = document.getElementById('resultCelcius');
 const elResultFahrenheit = document.getElementById('resultFahrenheit');
 
 const elResultKelvin = document.getElementById('resultKelvin');
-
-
 
 /** Get convert value
  */
@@ -194,7 +166,6 @@ function kelvinToFahrenheit() {
     elResultFahrenheit.value = `${tempResult} °F`
 
 }
-
 
 getValueToConvert()
 getBaseTemperature()
