@@ -31,8 +31,10 @@ Além do projeto base, foram propostos mais 3 desafios:
 
 **#3 Conversor de temperaturas**
 
-Este terceiro projeto é o resultado do segundo desafio proposto durante Projeto #2: um conversor de temperaturas, que funcionará da seguinte forma:
+Este terceiro projeto é o resultado do segundo desafio proposto durante Projeto #2: um conversor de temperaturas, que funciona da seguinte forma:
 
 - Usuário informa um valor a ser convertido;
 - Seleciona a temperatura base para conversão, entre Celcius, Fahrenheit e Kelvin;
 - Ao selecionar a temperatura base, a aplicação informa o resultado da conversão.
+
+Para este projeto, utilizei a biblioteca Bootstrap para agilizar o desenvolvimento.
