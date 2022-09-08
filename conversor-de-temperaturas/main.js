@@ -45,8 +45,6 @@ let resultInFahrenheit = 0;
 
 let resultInKelvin = 0;
 
-let resultCelciusToFahrenheit = 0;
-
 /**
  * DOM elements
  */
@@ -92,6 +90,8 @@ function getBaseTemperature(){
         selectTemperature = 'celcius';
 
         celciusToFahrenheit()
+
+        celciusToKelvin()
     
     })){
 
@@ -120,11 +120,19 @@ function getBaseTemperature(){
 
 function celciusToFahrenheit(){
 
-    resultCelciusToFahrenheit = (temperatureToConvert * 9/5) + 32
+    elResultCelcius.value = temperatureToConvert;
 
-    console.log(resultCelciusToFahrenheit)
+    elResultFahrenheit.value = (temperatureToConvert * 9/5) + 32;
 
-    elResultFahrenheit.value = resultCelciusToFahrenheit
+}
+
+/** °C => °K - C + 273,15 = K
+ */
+function celciusToKelvin() {
+
+    elResultCelcius.value = temperatureToConvert;
+    
+    elResultKelvin.value = (temperatureToConvert + 273.15);
 
 }
 
