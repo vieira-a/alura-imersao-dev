@@ -15,7 +15,7 @@
  * TODO list
  * 
  * [x] Get variables initialization
- * [ ] Create function to get convert value
+ * [x] Create function to get convert value
  * [ ] Create function to get radio selection
  * [ ] Create function to write the converted temperatures on the result inputs
  */
@@ -23,6 +23,20 @@
 /**
  * Variables initialization
  */
+
+/**
+ * General
+ */
+
+let temperatureToConvert = 0;
+
+let selectTemperature = 'celcius';
+
+let resultInCelcius = 0;
+
+let resultInFahrenheit = 0;
+
+let resultInKelvin = 0;
 
 /**
  * DOM elements
@@ -48,3 +62,15 @@ const elResultFahrenheit = document.getElementById('resultFahrenheit');
 
 const elResultKelvin = document.getElementById('resultKelvin');
 
+
+
+/** Get convert value
+ */
+
+function getValueToConvert(){
+    elValueToConvert.addEventListener('change', ()=>{
+        temperatureToConvert = Number(elValueToConvert.value)
+    })
+}
+
+getValueToConvert()
