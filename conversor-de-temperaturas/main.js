@@ -19,8 +19,8 @@
  * [x] Create function to get radio selection
  * [ ] Create function to calculate conversions
  *  [x] °C => °F 
- *  [ ] °C => °K
- *  [ ] °F => °C
+ *  [x] °C => °K
+ *  [x] °F => °C
  *  [ ] °F => °K
  *  [ ] °K => °C
  *  [ ] °K => °F
@@ -99,6 +99,8 @@ function getBaseTemperature(){
 
         selectTemperature = 'fahrenheit';
 
+        fahrenheitToCelcius()
+
     })) {
 
     } else if(elTempKelvin.addEventListener('click', ()=>{
@@ -106,7 +108,6 @@ function getBaseTemperature(){
         selectTemperature = 'kelvin';
 
     })){
-
 
     }
 
@@ -120,9 +121,11 @@ function getBaseTemperature(){
 
 function celciusToFahrenheit(){
 
-    elResultCelcius.value = temperatureToConvert;
+    elResultCelcius.value = `${temperatureToConvert} °C`;
 
-    elResultFahrenheit.value = (temperatureToConvert * 9/5) + 32;
+    tempResult = ((temperatureToConvert * 9/5) + 32).toFixed(2);
+
+    elResultFahrenheit.value = `${tempResult} °F`
 
 }
 
@@ -130,11 +133,27 @@ function celciusToFahrenheit(){
  */
 function celciusToKelvin() {
 
-    elResultCelcius.value = temperatureToConvert;
-    
-    elResultKelvin.value = (temperatureToConvert + 273.15);
+    elResultCelcius.value = `${temperatureToConvert} °C`;
+
+    tempResult = (temperatureToConvert + 273.15).toFixed(2)
+
+    elResultKelvin.value = `${tempResult} °K`;
 
 }
+
+/** °F => °C - (°F − 32) × 5/9 = °C
+ */
+function fahrenheitToCelcius() {
+
+    elResultFahrenheit.value = `${temperatureToConvert} °F`;
+
+    tempResult = ((temperatureToConvert - 32) * 5/9).toFixed(2);
+
+    elResultCelcius.value = `${tempResult} °C`;
+
+}
+
+
 
 getValueToConvert()
 getBaseTemperature()
