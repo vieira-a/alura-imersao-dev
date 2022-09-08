@@ -25,4 +25,6 @@ Este segundo projeto da imersão tem o propósito de continuar o aprofundamento 
 
 Além do projeto base, foram propostos mais 3 desafios:
 
-- Realizar conversão também para Bitcoin (BTC)
+- Realizar conversão também para Bitcoin (BTC);
+- Criar conversor para calcular o tempo que leva para percorrer determinada distância no espaço: Km => anos luz
+- Criar conversor de temperaturas: Celsius <=> Fahrenheit <=> Kelvin
