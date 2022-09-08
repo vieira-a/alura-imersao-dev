@@ -17,6 +17,13 @@
  * [x] Get variables initialization
  * [x] Create function to get convert value
  * [x] Create function to get radio selection
+ * [ ] Create function to calculate conversions
+ *  [x] °C => °F 
+ *  [ ] °C => °K
+ *  [ ] °F => °C
+ *  [ ] °F => °K
+ *  [ ] °K => °C
+ *  [ ] °K => °F
  * [ ] Create function to write the converted temperatures on the result inputs
  */
 
@@ -37,6 +44,8 @@ let resultInCelcius = 0;
 let resultInFahrenheit = 0;
 
 let resultInKelvin = 0;
+
+let resultCelciusToFahrenheit = 0;
 
 /**
  * DOM elements
@@ -81,6 +90,8 @@ function getBaseTemperature(){
     if(elTempCelcius.addEventListener('click', ()=>{
     
         selectTemperature = 'celcius';
+
+        celciusToFahrenheit()
     
     })){
 
@@ -98,6 +109,22 @@ function getBaseTemperature(){
 
 
     }
+
+}
+
+/**
+ * Calculate conversion
+ * 
+ * °C => °F - (°C × 9/5) + 32 = °F
+ */
+
+function celciusToFahrenheit(){
+
+    resultCelciusToFahrenheit = (temperatureToConvert * 9/5) + 32
+
+    console.log(resultCelciusToFahrenheit)
+
+    elResultFahrenheit.value = resultCelciusToFahrenheit
 
 }
 
