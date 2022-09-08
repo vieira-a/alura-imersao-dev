@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Conversor de temperaturas</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+        <div class="container>
+            <ul class="navbar-nav">
+                <li class="nav-item">Temperaturas</li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container p-5 my-5 bg-primary text-white">
+        <h1>Conversor de Temperaturas</h1>
+        <p>Informe um valor e selecione uma temperatura base para conversão</p>
+    </div>
+    <div class="container p-5 my-5 border">
+        <div class="convertValue">
+            <h5>Informe o valor a ser convertido</h5>
+            <div class="input-group mb-3">
+                <input type="number" class="form-control" placeholder="ºC, ºF ou ºK">
+            </div>
+        </div>
+        <div class="selectTemperature">
+            <h5>Selecione a temperatura base</h5>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="celcius" checked>
+                <label class="form-check-label" for="flexRadioDefault1">Celcius
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="fahrenheit">
+                <label class="form-check-label" for="flexRadioDefault2">Fahrenheit
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="kelvin">
+                <label class="form-check-label" for="flexRadioDefault2">Kelvin
+                </label>
+            </div>
+        </div>
+        <br>
+        <div class="result">
+            <h5>Resultado da conversão</h5>
+            <div class="input-group mb-3">
+                <span style="width: 100px;" class="input-group-text" id="resultCelcius">Celcius</span>
+                <input type="text" class="form-control" readonly="readonly">
+            </div>
+            <div class="input-group mb-3">
+                <span style="width: 100px;" class="input-group-text" id="resultFahrenheit">Fahrenheit</span>
+                <input type="text" class="form-control" readonly="readonly">
+            </div>
+            <div class="input-group mb-3">
+                <span style="width: 100px;" class="input-group-text" id="resultKelvin">Kelvin</span>
+                <input type="text" class="form-control" readonly="readonly">
+            </div>
+        </div>
+</body>
+</html>

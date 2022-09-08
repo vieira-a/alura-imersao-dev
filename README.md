@@ -28,3 +28,11 @@ Além do projeto base, foram propostos mais 3 desafios:
 - Realizar conversão também para Bitcoin (BTC);
 - Criar conversor para calcular o tempo que leva para percorrer determinada distância no espaço: Km => anos luz
 - Criar conversor de temperaturas: Celsius <=> Fahrenheit <=> Kelvin
+
+**#3 Conversor de temperaturas**
+
+Este terceiro projeto é o resultado do segundo desafio proposto durante Projeto #2: um conversor de temperaturas, que funcionará da seguinte forma:
+
+- Usuário informa um valor a ser convertido;
+- Seleciona a temperatura base para conversão, entre Celcius, Fahrenheit e Kelvin;
+- Ao selecionar a temperatura base, a aplicação informa o resultado da conversão.
