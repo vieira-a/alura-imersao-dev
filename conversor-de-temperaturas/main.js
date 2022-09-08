@@ -101,6 +101,8 @@ function getBaseTemperature(){
 
         fahrenheitToCelcius()
 
+        fahrenheitToKelvin()
+
     })) {
 
     } else if(elTempKelvin.addEventListener('click', ()=>{
@@ -150,6 +152,18 @@ function fahrenheitToCelcius() {
     tempResult = ((temperatureToConvert - 32) * 5/9).toFixed(2);
 
     elResultCelcius.value = `${tempResult} °C`;
+
+}
+
+/** °F => °K - (°F − 32) × 5/9 + 273,15 = K
+ */
+function fahrenheitToKelvin() {
+
+    elResultFahrenheit.value = `${temperatureToConvert} °F`;
+
+    tempResult = ((temperatureToConvert - 32) * 5/9 + 273.15).toFixed(2);
+
+    elResultKelvin.value = `${tempResult} °K`
 
 }
 
