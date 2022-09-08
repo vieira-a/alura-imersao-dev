@@ -17,14 +17,14 @@
  * [x] Get variables initialization
  * [x] Create function to get convert value
  * [x] Create function to get radio selection
- * [ ] Create function to calculate conversions
+ * [x] Create function to calculate conversions
  *  [x] °C => °F 
  *  [x] °C => °K
  *  [x] °F => °C
  *  [x] °F => °K
- *  [ ] °K => °C
- *  [ ] °K => °F
- * [ ] Create function to write the converted temperatures on the result inputs
+ *  [x] °K => °C
+ *  [x] °K => °F
+ * [x] Create function to write the converted temperatures on the result inputs
  */
 
 /**
@@ -111,6 +111,8 @@ function getBaseTemperature(){
 
         kelvinToCelcius()
 
+        kelvinToFahrenheit()
+
     })){
 
     }
@@ -178,6 +180,18 @@ function kelvinToCelcius() {
     tempResult = (temperatureToConvert - 273.15).toFixed(2);
 
     elResultCelcius.value = `${tempResult} °C`
+
+}
+
+/** °K => °F - (K − 273,15) × 9/5 + 32 = °F
+ */
+function kelvinToFahrenheit() {
+
+    elResultKelvin.value = `${temperatureToConvert} °K`;
+
+    tempResult = ((temperatureToConvert - 273.15) * 9/5 + 32).toFixed(2);
+
+    elResultFahrenheit.value = `${tempResult} °F`
 
 }
 
